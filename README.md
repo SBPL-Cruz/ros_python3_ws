@@ -1,6 +1,9 @@
 # ros_python3_ws
 
-Configure catkin build to use python3 - 
+1. Clone the repo
+2. Initialize a catkin workspace using ```catkin init```
+3. Configure catkin build to use python3. Point to your version of Python 3 on your system - 
 ```
 catkin config -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m  -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so
 ```
+4. Build using ```catking build```
