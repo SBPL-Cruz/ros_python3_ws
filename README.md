@@ -11,6 +11,7 @@ catkin config -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/inc
 ```pip3 install numpy```   
 ```pip3 install empy```
 ```pip3 install pyyaml```
+```pip3 install rospkg```
 5. mkdir install
 6. Build using ```catkin build```
 7. To use these packages, add this to your python path - ```${WORKSPACE_ROOT}/ros_python3_ws/install/lib/python3/dist-packages```
