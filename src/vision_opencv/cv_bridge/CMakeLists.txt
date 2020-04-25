@@ -3,16 +3,16 @@ project(cv_bridge)
 
 find_package(catkin REQUIRED COMPONENTS rosconsole sensor_msgs)
 
-if(NOT ANDROID)
-  find_package(PythonLibs)
-  if(PYTHONLIBS_VERSION_STRING VERSION_LESS 3)
-    find_package(Boost REQUIRED python)
-  else()
-    find_package(Boost REQUIRED python-py35)
-  endif()
-else()
-find_package(Boost REQUIRED)
-endif()
+#if(NOT ANDROID)
+  find_package(PythonLibs 3.6)
+  #if(PYTHONLIBS_VERSION_STRING VERSION_LESS 3)
+  #  find_package(Boost REQUIRED python)
+  #else()
+  find_package(Boost REQUIRED python-py35)
+  #endif()
+#else()
+#find_package(Boost REQUIRED)
+#endif()
 find_package(OpenCV 3 REQUIRED
   COMPONENTS
     opencv_core
